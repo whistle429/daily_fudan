@@ -217,8 +217,10 @@ class Zlapp(Fudan):
         for i in range(3):
             captcha_text = captcha()
             #captcha_text = 'abcd'
+            #update 'xwszxqsffbhjf': '3',
             self.last_info.update({
                 'sfzx': 1,
+                'xwszxqsffbhjf': '3',
                 'code': captcha_text
             })
             save = self.session.post(
